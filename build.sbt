@@ -8,7 +8,8 @@ scalaVersion := "2.11.5"
 
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "2.2.1" % "test" withSources() withJavadoc(),
-  "org.scalacheck" %% "scalacheck" % "1.12.1" % "test" withSources() withJavadoc()
+  "org.scalacheck" %% "scalacheck" % "1.12.1" % "test" withSources() withJavadoc(),
+  "com.typesafe.play" % "play-json_2.11" % "2.4.2"
 )
 
 initialCommands := "import org.ardlema.githubcommitsstats._"
