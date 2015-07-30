@@ -125,6 +125,9 @@ class ContributorParserSpec extends FlatSpec with Matchers {
   "The Contribution Parser" should "extract contributions from a response" in new StandardResponse {
     val contributions = ContributionParser.getContributions(contributorsResponse, "theproject")
     contributions.size should be(3)
+    contributions should contain(Contribution("ramona", "theproject", 2, 10))
+    contributions should contain(Contribution("manolo", "theproject", 5, 10))
+    contributions should contain(Contribution("amparo", "theproject", 3, 10))
   }
 }
 
@@ -142,7 +145,7 @@ case class Author(login: String)
 
 case class ContributionJson(total: Long, author: Author)
 
-case class Contribution(year: Int, committer: String, project: String, flow1: Long, flow2: Long)
+case class Contribution(committer: String, project: String, flow1: Long, flow2: Long)
 
 object ContributionParser {
 
@@ -153,7 +156,7 @@ object ContributionParser {
       case Success(parsedJson) =>  {
         val totalCommits = parsedJson.map(_.total).sum
         for (jsonElement <- parsedJson)
-          yield Contribution(2015, jsonElement.author.login, project, jsonElement.total, totalCommits)
+          yield Contribution(jsonElement.author.login, project, jsonElement.total, totalCommits)
       }
       case Failure(ex) => Seq.empty
     }
