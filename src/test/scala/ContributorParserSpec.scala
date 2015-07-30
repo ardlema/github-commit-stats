@@ -22,21 +22,21 @@ class ContributorParserSpec extends FlatSpec with Matchers {
       }
       ],
       "author": {
-        "login": "tomasperezv",
+        "login": "ramona",
         "id": 379269,
         "avatar_url": "https://avatars.githubusercontent.com/u/379269?v=3",
         "gravatar_id": "",
-        "url": "https://api.github.com/users/tomasperezv",
-        "html_url": "https://github.com/tomasperezv",
-        "followers_url": "https://api.github.com/users/tomasperezv/followers",
-        "following_url": "https://api.github.com/users/tomasperezv/following{/other_user}",
-        "gists_url": "https://api.github.com/users/tomasperezv/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/tomasperezv/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/tomasperezv/subscriptions",
-        "organizations_url": "https://api.github.com/users/tomasperezv/orgs",
-        "repos_url": "https://api.github.com/users/tomasperezv/repos",
-        "events_url": "https://api.github.com/users/tomasperezv/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/tomasperezv/received_events",
+        "url": "https://api.github.com/users/ramona",
+        "html_url": "https://github.com/ramona",
+        "followers_url": "https://api.github.com/users/ramona/followers",
+        "following_url": "https://api.github.com/users/ramona/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ramona/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ramona/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ramona/subscriptions",
+        "organizations_url": "https://api.github.com/users/ramona/orgs",
+        "repos_url": "https://api.github.com/users/ramona/repos",
+        "events_url": "https://api.github.com/users/ramona/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ramona/received_events",
         "type": "User",
         "site_admin": false
       }
@@ -58,21 +58,21 @@ class ContributorParserSpec extends FlatSpec with Matchers {
       }
       ],
       "author": {
-        "login": "witokondoria",
+        "login": "manolo",
         "id": 5685669,
         "avatar_url": "https://avatars.githubusercontent.com/u/5685669?v=3",
         "gravatar_id": "",
-        "url": "https://api.github.com/users/witokondoria",
-        "html_url": "https://github.com/witokondoria",
-        "followers_url": "https://api.github.com/users/witokondoria/followers",
-        "following_url": "https://api.github.com/users/witokondoria/following{/other_user}",
-        "gists_url": "https://api.github.com/users/witokondoria/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/witokondoria/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/witokondoria/subscriptions",
-        "organizations_url": "https://api.github.com/users/witokondoria/orgs",
-        "repos_url": "https://api.github.com/users/witokondoria/repos",
-        "events_url": "https://api.github.com/users/witokondoria/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/witokondoria/received_events",
+        "url": "https://api.github.com/users/manolo",
+        "html_url": "https://github.com/manolo",
+        "followers_url": "https://api.github.com/users/manolo/followers",
+        "following_url": "https://api.github.com/users/manolo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/manolo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/manolo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/manolo/subscriptions",
+        "organizations_url": "https://api.github.com/users/manolo/orgs",
+        "repos_url": "https://api.github.com/users/manolo/repos",
+        "events_url": "https://api.github.com/users/manolo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/manolo/received_events",
         "type": "User",
         "site_admin": false
       }
@@ -100,21 +100,21 @@ class ContributorParserSpec extends FlatSpec with Matchers {
       }
       ],
       "author": {
-        "login": "roclas",
+        "login": "amparo",
         "id": 1390424,
         "avatar_url": "https://avatars.githubusercontent.com/u/1390424?v=3",
         "gravatar_id": "",
-        "url": "https://api.github.com/users/roclas",
-        "html_url": "https://github.com/roclas",
-        "followers_url": "https://api.github.com/users/roclas/followers",
-        "following_url": "https://api.github.com/users/roclas/following{/other_user}",
-        "gists_url": "https://api.github.com/users/roclas/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/roclas/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/roclas/subscriptions",
-        "organizations_url": "https://api.github.com/users/roclas/orgs",
-        "repos_url": "https://api.github.com/users/roclas/repos",
-        "events_url": "https://api.github.com/users/roclas/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/roclas/received_events",
+        "url": "https://api.github.com/users/amparo",
+        "html_url": "https://github.com/amparo",
+        "followers_url": "https://api.github.com/users/amparo/followers",
+        "following_url": "https://api.github.com/users/amparo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/amparo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/amparo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/amparo/subscriptions",
+        "organizations_url": "https://api.github.com/users/amparo/orgs",
+        "repos_url": "https://api.github.com/users/amparo/repos",
+        "events_url": "https://api.github.com/users/amparo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/amparo/received_events",
         "type": "User",
         "site_admin": false
       }
@@ -123,9 +123,14 @@ class ContributorParserSpec extends FlatSpec with Matchers {
   }
 
   "The Contribution Parser" should "extract contributions from a response" in new StandardResponse {
-    val contributions = ContributionParser.getContributions(contributorsResponse)
+    val contributions = ContributionParser.getContributions(contributorsResponse, "theproject")
     contributions.size should be(3)
   }
+}
+
+object Author {
+  implicit val authorReads = Json.reads[Author]
+  implicit val authorWrites = Json.writes[Author]
 }
 
 object ContributionJson {
@@ -133,26 +138,24 @@ object ContributionJson {
   implicit val contributionWrites = Json.writes[ContributionJson]
 }
 
-object Contributions {
-  implicit val contributionsReads = Json.reads[Contributions]
-  implicit val contributionsWrites = Json.writes[Contributions]
-}
+case class Author(login: String)
 
-case class ContributionJson(total: Int)
+case class ContributionJson(total: Long, author: Author)
 
-case class Contributions(contributions: Seq[ContributionJson])
-
-case class Contribution(year: String, commiter: String, project: String, flow1: Long, flow2: Long)
+case class Contribution(year: Int, committer: String, project: String, flow1: Long, flow2: Long)
 
 object ContributionParser {
 
-  def getContributions(contributionResponse: String): Seq[Contribution] = {
-    val json = Try(Json.parse(contributionResponse).as[Contributions])
+  def getContributions(contributionResponse: String, project: String): Seq[Contribution] = {
+    val json = Try(Json.parse(contributionResponse).as[List[ContributionJson]])
 
     json match {
-      case Success(parsedJson) => "hola"
-      case Failure(ex) => println(s"Exception: $ex")
+      case Success(parsedJson) =>  {
+        val totalCommits = parsedJson.map(_.total).sum
+        for (jsonElement <- parsedJson)
+          yield Contribution(2015, jsonElement.author.login, project, jsonElement.total, totalCommits)
+      }
+      case Failure(ex) => Seq.empty
     }
-    Seq.empty
   }
 }
