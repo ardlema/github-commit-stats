@@ -1,9 +1,10 @@
 package org.ardlema.githubcommitsstats
 
-import org.scalamock.scalatest.MockFactory
 import org.scalatest._
+import org.scalatest.mock.MockitoSugar
+import org.mockito.Mockito._
 
-class GithubApiServiceSpec extends FlatSpec with ShouldMatchers with MockFactory {
+class GithubApiServiceSpec extends FlatSpec with ShouldMatchers with MockitoSugar {
 
   trait ApiResponse {
 
@@ -43,9 +44,10 @@ class GithubApiServiceSpec extends FlatSpec with ShouldMatchers with MockFactory
   }
 
   "The GithubApiService" should "call the commiter stats github api" in new ApiResponse {
-    val githubApiCaller = stub[GithubApiCaller]
-    (githubApiCaller.contributionsStats _).when().returns(apiResponse)
-    val contributions = GithubApiService.getContributions("theproject", githubApiCaller)
+    val project = "theproject"
+    val githubApiCaller = mock[GithubApiCaller]
+    when(githubApiCaller.contributionsStats(project)).thenReturn(apiResponse)
+    val contributions = GithubApiService.getContributions(project, githubApiCaller)
     contributions.size should be(1)
     contributions should contain(Contribution("ramona", "theproject", 2, 2))
   }
