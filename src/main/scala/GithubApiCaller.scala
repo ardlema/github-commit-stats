@@ -2,7 +2,7 @@ package org.ardlema.githubcommitsstats
 
 class GithubApiCaller {
 
-  def contributionsStats() = {
+  def contributionsStats(): String = {
     ""
   }
 }
