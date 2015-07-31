@@ -22,14 +22,14 @@ case class Contribution(committer: String, project: String, flow1: Long, flow2: 
 
 object ContributionParser {
 
-  def getContributions(contributionResponse: String, project: String): Seq[Contribution] = {
+  def getContributions(contributionResponse: String, repoName: String): Seq[Contribution] = {
     val json = Try(Json.parse(contributionResponse).as[List[ContributionJson]])
 
     json match {
       case Success(parsedJson) =>  {
         val totalCommits = parsedJson.map(_.total).sum
         for (jsonElement <- parsedJson)
-        yield Contribution(jsonElement.author.login, project, jsonElement.total, totalCommits)
+        yield Contribution(jsonElement.author.login, repoName, jsonElement.total, totalCommits)
       }
       case Failure(ex) => Seq.empty
     }
