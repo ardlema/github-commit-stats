@@ -18,7 +18,13 @@ case class Author(login: String)
 
 case class ContributionJson(total: Long, author: Author)
 
-case class Contribution(committer: String, project: String, flow1: Long, flow2: Long)
+case class Contribution(committer: String, project: String, flow1: Long, flow2: Long) {
+
+  //TODO: Parse the year from the contributors response
+  val year = 2015
+
+  override def toString = { s"$year,$committer,$project,$flow1,$flow2" }
+}
 
 object ContributionParser {
 

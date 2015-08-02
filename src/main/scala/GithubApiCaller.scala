@@ -16,14 +16,22 @@ class GithubApiCaller {
     val secureDefaultsWithSpecificOptions = builder.build()
     implicit val implicitClient = new NingWSClient(secureDefaultsWithSpecificOptions)
     val response = WS.clientUrl(s"https://api.github.com/repos/stratio/$repoName/stats/contributors").get()
-    val result = Await.result(response, 2 seconds)
+    println(s"About to call gihub API to get contributors for $repoName...")
+    val result = Await.result(response, 10 seconds)
     val stats = result.status match {
         case 202 => {
-          Thread.sleep(2000)
+          println("Data hasn't been cached. Waiting the background job to be fired...")
+          Thread.sleep(5000)
           contributionsStats(repoName)
         }
-        case 200 => result.body
-        case _ => ""
+        case 200 => {
+          println(s"Contributors for $repoName fetched OK!!")
+          result.body
+        }
+        case _ => {
+          println(s"No contributors fetched for $repoName")
+          ""
+        }
       }
     stats
   }
